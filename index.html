@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <script src="script.js"></script>
     <nav id="desktop-nav">
       <div class="logo">Mohammed Nassiri</div>
       <div>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#About">About</a></li>
           <li><a href="#Experience">Projects</a></li>
           <li><a href="#Projects">Projects</a></li>
@@ -20,5 +19,22 @@
         </ul>
       </div>
     </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mohammed Nassiri</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#About" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Experience" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <script src="script.js"></script>
   </body>
 </html>
