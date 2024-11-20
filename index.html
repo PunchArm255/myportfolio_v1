@@ -1,75 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mohammed Nassiri - Home</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Vite + React</title>
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Mohammed Nassiri</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#About">About</a></li>
-          <li><a href="#Experience">Projects</a></li>
-          <li><a href="#Projects">Projects</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Mohammed Nassiri</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#About" onclick="toggleMenu()">About</a></li>
-          <li><a href="#Experience" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="pfp" />
-      </div>
-      <div class="section__text">
-        <p class="section__p1">Hello! I'm</p>
-        <h1 class="title">Mohammed Nassiri</h1>
-        <p class="section__p2">Frontend Developer | UI/UX Designer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#Contact'">
-            Contact Info
-          </button>
-        </div>
-        <div class="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My Linkedin Profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/simonassiri/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github Profile"
-            class="icon"
-            onclick="location.href='https://github.com/puncharm255/'"
-          />
-        </div>
-      </div>
-    </section>
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
